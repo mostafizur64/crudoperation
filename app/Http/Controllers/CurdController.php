@@ -46,7 +46,7 @@ if($request->hasFile('product_photo')){
     }
     public function Edit($id){
         $products=Crud::findOrFail($id);
-        return view('editproduct',compact('products'));
+        return view('Crud.editproduct',compact('products'));
     }
 
 

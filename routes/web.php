@@ -19,7 +19,7 @@ use App\Models\Crud;
 
 Route::get('/', function () {
     $productsitems=Crud::all();
-    return view('crudoperation',compact('productsitems') );
+    return view('Crud.crudoperation',compact('productsitems') );
 });
 
 Route::post('product/store',[CurdController::class,'store'])->name('product.store');
